@@ -1,0 +1,17 @@
+//making video element into a background
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; //to make sure the bg-video is behind all other element
+  opacity: 0.15;
+  // overflow: hidden; // when ever there is an overflow we can hide it with this property.
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; //this will fill the entire element while still maintaning it's aspect ratio.
+  }
+}

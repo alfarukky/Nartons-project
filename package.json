@@ -1,0 +1,19 @@
+{
+  "name": "nortons-p",
+  "version": "1.0.0",
+  "description": "Landing page for natours project",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --no-source-map --watch sass/main.scss css/main.css",
+    "concat-css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
+    "prefix-css": "postcss --use autoprefixer --autoprefixer.browsers '> 5%' -o css/style.prefix.css css/style.concat.css"
+  },
+  "author": "alfarukky",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "concat": "^1.0.3",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.53.0"
+  }
+}
